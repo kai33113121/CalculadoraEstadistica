@@ -1,4 +1,6 @@
 CALCULADORA ESTADISTICA POR ANGEL DAVID VANEGAS BULLA
+
+
 El presente documento presenta el desarrollo de una calculadora estadística web 
 diseñada para calcular la media aritmética y la desviación estándar de conjuntos 
 de datos numéricos. Este software fue desarrollado siguiendo los requerimientos 

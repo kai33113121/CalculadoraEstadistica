@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Estadística - Media y Desviación Estándar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Calculadora Estadística</h1>
+        <p class="subtitle">Cálculo de Media Aritmética y Desviación Estándar</p>
+
+        <div id="alert" class="alert"></div>
+
+        <div class="section">
+            <h2 class="section-title">Entrada de Datos</h2>
+            
+            <div class="input-group">
+                <label for="dataInput">Ingrese los datos numéricos (separados por comas, espacios o saltos de línea)</label>
+                <textarea id="dataInput" placeholder="Ejemplo: 10, 15, 20, 25, 30&#10;o&#10;10 15 20 25 30"></textarea>
+                <p class="info-text">💡 Los valores no numéricos y vacíos serán ignorados automáticamente</p>
+            </div>
+
+            <button id="calculateBtn">Calcular Estadísticas</button>
+        </div>
+
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Procesando datos...</p>
+        </div>
+
+        <div id="results" class="results">
+            <h2 class="section-title">Resultados del Análisis</h2>
+            
+            <div class="stat-card">
+                <span class="stat-label">📈 Media Aritmética (μ)</span>
+                <span class="stat-value" id="mean">-</span>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-label">📊 Desviación Estándar (σ)</span>
+                <span class="stat-value" id="stdDev">-</span>
+            </div>
+
+            <div class="grid-2">
+                <div class="stat-card">
+                    <span class="stat-label">🔢 Registros Procesados</span>
+                    <span class="stat-value" id="count">-</span>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-label">⚠️ Datos Descartados</span>
+                    <span class="stat-value" id="invalid">-</span>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="stat-card">
+                    <span class="stat-label">⬇️ Valor Mínimo</span>
+                    <span class="stat-value" id="min">-</span>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-label">⬆️ Valor Máximo</span>
+                    <span class="stat-value" id="max">-</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-label">📏 Rango</span>
+                <span class="stat-value" id="range">-</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
